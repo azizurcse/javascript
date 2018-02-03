@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<script type="text/javascript">
+		function colorChange(){
+			document.getElementById('text3').innerHTML="hello this is js function for onclick";
+		}
+	</script>
+</head>
 <body>
 	<div class="container">
 		<div class="row">
@@ -7,10 +14,12 @@
 			<div class="col-md-6">
 				<button onclick="document.getElementById('text').innerHTML='Hello js world'">js onclick</button>
 				<button onclick="document.getElementById('text2').style.color='red'">style color change</button>
+				<button onclick="colorChange()">function color change</button>
 			</div>
 			<div class="col-md-6">
 				<button id="text">demo</button>
 				<h2 id="text2">Hi js ,welcome to my screen</h2>
+				<h4 id="text3">Hi js ,welcome to my board</h4>
 			</div>
 		</div>
 	</div>
