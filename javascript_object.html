@@ -5,6 +5,7 @@
     <title>Javascript Object</title>
 </head>
 <body>
+<p id="demo"></p>
     <script type="text/javascript">
     var student= {};
     student.name="jibon";
@@ -19,8 +20,13 @@
         cse:"Computer Science and Engineering",
         hons:"national university"
     };
-
-    document.write(student.name+ " " + depertment.cse);
+    var persion={sex:"male",
+    work:function walking(){
+        return "walking in morning";
+    }
+};
+    // document.write(student.name+ " " + depertment.cse);
+    document.getElementById('demo').innerHTML=persion.work();
     </script>
 </body>
 </html>
