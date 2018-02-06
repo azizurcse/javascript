@@ -5,10 +5,12 @@
     <body>
         <p>hello world</p>
         <p id="demo"></p>
+        <p id="demo2"></p>
         <script>
            var a="hello world bd bd bd bd";
-           var b=a.replace(/bd/g,"jibon");
-           document.getElementById('demo').innerHTML=b;
+     
+           document.getElementById('demo').innerHTML=a.charAt(0);
+           document.getElementById('demo2').innerHTML=a.charCodeAt(0);
         </script>
     </body>
 </html>
